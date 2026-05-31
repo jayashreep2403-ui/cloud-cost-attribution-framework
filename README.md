@@ -30,8 +30,20 @@ This project implements a standardized tagging framework to enable:
 * Monitoring dashboards
 
 ## Architecture
-
-Terraform → AWS Resources → CloudWatch → Grafana → Cost Reports
+Terraform
+    |
+    v
+AWS Resources
+(EC2, S3, VPC)
+    |
+    v
+CloudWatch
+    |
+    v
+Grafana Dashboard
+    |
+    v
+Cost Attribution Reports
 
 ## Author
 
